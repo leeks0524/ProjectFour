@@ -4,15 +4,15 @@ import PropTypes from 'utils/propTypes';
 import classNames from 'classnames';
 
 const Avatar = ({
-  rounded,
-  circle,
-  src,
-  size,
-  tag: Tag,
-  className,
-  style,
-  ...restProps
-}) => {
+                  rounded,
+                  circle,
+                  src,
+                  size,
+                  tag: Tag,
+                  className,
+                  style,
+                  ...restProps
+                }) => {
   const classes = classNames({ 'rounded-circle': circle, rounded }, className);
   return (
     <Tag

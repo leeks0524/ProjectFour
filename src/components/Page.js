@@ -10,13 +10,13 @@ import Typography from './Typography';
 const bem = bn.create('page');
 
 const Page = ({
-  title,
-  breadcrumbs,
-  tag: Tag,
-  className,
-  children,
-  ...restProps
-}) => {
+                title,
+                breadcrumbs,
+                tag: Tag,
+                className,
+                children,
+                ...restProps
+              }) => {
   const classes = bem.b('px-3', className);
 
   return (
@@ -27,17 +27,17 @@ const Page = ({
             {title}
           </Typography>
         ) : (
-            title
-          )}
+          title
+        )}
         {breadcrumbs && (
           <Breadcrumb className={bem.e('breadcrumb')}>
             <BreadcrumbItem>Home</BreadcrumbItem>
             {breadcrumbs.length &&
-              breadcrumbs.map(({ name, active }, index) => (
-                <BreadcrumbItem key={index} active={active}>
-                  {name}
-                </BreadcrumbItem>
-              ))}
+            breadcrumbs.map(({ name, active }, index) => (
+              <BreadcrumbItem key={index} active={active}>
+                {name}
+              </BreadcrumbItem>
+            ))}
           </Breadcrumb>
         )}
       </div>

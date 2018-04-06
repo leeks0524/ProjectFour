@@ -5,13 +5,13 @@ import { Card, CardText, CardTitle, Progress } from 'reactstrap';
 import Typography from '../Typography';
 
 const NumberWidget = ({
-  title,
-  subtitle,
-  number,
-  color,
-  progress: { value, label },
-  ...restProps
-}) => {
+                        title,
+                        subtitle,
+                        number,
+                        color,
+                        progress: { value, label },
+                        ...restProps
+                      }) => {
   return (
     <Card body {...restProps}>
       <div className="d-flex justify-content-between">

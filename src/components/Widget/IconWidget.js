@@ -6,14 +6,14 @@ import classNames from 'classnames';
 import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 const IconWidget = ({
-  bgColor,
-  icon: Icon,
-  iconProps,
-  title,
-  subtitle,
-  className,
-  ...restProps
-}) => {
+                      bgColor,
+                      icon: Icon,
+                      iconProps,
+                      title,
+                      subtitle,
+                      className,
+                      ...restProps
+                    }) => {
   const classes = classNames('cr-widget', className, {
     [`bg-${bgColor}`]: bgColor,
   });
