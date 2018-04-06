@@ -14,7 +14,7 @@ import NotificationSystem from "react-notification-system";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // layouts
-import { Header, Content } from "components/Layout";
+import { Content } from "components/Layout";
 
 import GAListener from "components/GAListener";
 
@@ -56,7 +56,6 @@ class App extends React.Component {
         <z>
           <main className="cr-app bg-light">
             <Content fluid onClick={this.handleContentClick}>
-              <Header />
               <Switch>
                 <Route exact path="/" component={DashboardPage} />
 

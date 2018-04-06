@@ -5,7 +5,7 @@ export const chartjs = {
       datasets: [
         {
           label: "Expense for this year",
-          backgroundColor: "#6a82fb",
+          backgroundColor: "#ffccbb",
           stack: "Expense",
           data: [10000, 30000, 50000, 80000, 60000, 20000, 10000]
         },
@@ -67,7 +67,7 @@ export const chartjs = {
         {
           label: "Earning of the month",
           borderColor: "#006c84",
-          backgroundColor: "#006c84",
+          backgroundColor: "#ffccbb",
           data: [
             1700,
             1300,
@@ -87,7 +87,7 @@ export const chartjs = {
         {
           label: "Earning of the month",
           borderColor: "#6eb5c0",
-          backgroundColor: "#6eb5c0",
+          backgroundColor: "#ffccbb",
           data: [
             2100,
             1300,
