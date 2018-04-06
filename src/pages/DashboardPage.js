@@ -61,52 +61,52 @@ class DashboardPage extends React.Component {
         <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Accounts"
-              subtitle="This month"
-              number="9.8k"
+              title="ADBE:Adobe Systems Inc"
+              subtitle="Today"
+              number="95.83"
               color="success"
               progress={{
-                value: 97,
-                label: "Last month"
+                value: 87,
+                label: "Yesterday"
               }}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Today's Performance"
-              subtitle="This month"
-              number="5,400"
+              title="AMZN:Amazon Inc"
+              subtitle="Today"
+              number="102.39"
               color="danger"
               progress={{
-                value: 45,
-                label: "Last month"
+                value: 98,
+                label: "Yesterday"
               }}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="New Users"
-              subtitle="This month"
-              number="3,400"
+              title="CTSH: Cognizant Technology Solution Corp"
+              subtitle="Today"
+              number="88.29"
               color="primary"
               progress={{
-                value: 90,
-                label: "Last month"
+                value: 98.39,
+                label: "Yesterday"
               }}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Bounce Rate"
-              subtitle="This month"
-              number="38%"
+              title="EA:Electronic Arts"
+              subtitle="Today"
+              number="73.20"
               color="secondary"
               progress={{
-                value: 60,
-                label: "Last month"
+                value: 90.88,
+                label: "Yesterday"
               }}
             />
           </Col>
@@ -115,10 +115,7 @@ class DashboardPage extends React.Component {
         <Row>
           <Col lg="8" md="12" sm="12" xs="12">
             <Card>
-              <CardHeader>
-                Total Revenue{" "}
-                <small className="text-muted text-capitalize">This year</small>
-              </CardHeader>
+              <CardHeader>Account Performance </CardHeader>
               <CardBody>
                 <Line data={chartjs.line.data} options={chartjs.line.options} />
               </CardBody>
@@ -127,7 +124,7 @@ class DashboardPage extends React.Component {
 
           <Col lg="4" md="12" sm="12" xs="12">
             <Card>
-              <CardHeader>Total Expense</CardHeader>
+              <CardHeader>Investments </CardHeader>
               <CardBody>
                 <Bar data={chartjs.bar.data} options={chartjs.bar.options} />
               </CardBody>

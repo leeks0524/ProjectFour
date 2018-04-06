@@ -4,14 +4,14 @@ export const chartjs = {
       labels: ["January", "February", "March", "April", "May", "June", "July"],
       datasets: [
         {
-          label: "Expense for this year",
-          backgroundColor: "#6a82fb",
+          label: "ADBE",
+          backgroundColor: "#335252",
           stack: "Expense",
           data: [10000, 30000, 50000, 80000, 60000, 20000, 10000]
         },
         {
-          label: "Expense for last year",
-          backgroundColor: "#fc5c7d",
+          label: "GOGL",
+          backgroundColor: "#52958b",
           stack: "Expense",
           data: [30000, 80000, 50000, 100000, 60000, 40000, 90000]
         }
@@ -65,9 +65,9 @@ export const chartjs = {
       ],
       datasets: [
         {
-          label: "Earning of the month",
-          borderColor: "#006c84",
-          backgroundColor: "#006c84",
+          label: "Balance of the month : AMZN",
+          borderColor: "#5ea8a7",
+          backgroundColor: "#5ea8a7",
           data: [
             1700,
             1300,
@@ -85,9 +85,9 @@ export const chartjs = {
         },
 
         {
-          label: "Earning of the month",
-          borderColor: "#6eb5c0",
-          backgroundColor: "#6eb5c0",
+          label: "Balance of the month : EA",
+          borderColor: "#257985",
+          backgroundColor: "#257985",
           data: [
             2100,
             1300,
