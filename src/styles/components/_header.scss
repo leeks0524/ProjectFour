@@ -1,5 +1,5 @@
 .cr-header {
-  margin-bottom: $spacer * .5;
+  margin-bottom: $spacer * 0.5;
   border-bottom: $border-width solid $border-color;
 
   &__nav-right {
@@ -7,14 +7,4 @@
     justify-content: flex-end;
     margin-left: auto;
   }
-
-  // &__notification-popover {
-  //   &.popover {
-  //     width: 320px;
-  //     max-width: 320px;
-  //     max-height: 100vh;
-  //     overflow-y: scroll;
-  //     cursor: pointer;
-  //   }
-  // }
 }

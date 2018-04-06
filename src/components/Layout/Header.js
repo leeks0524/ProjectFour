@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import bn from 'utils/bemnames';
+import bn from "utils/bemnames";
 
 import {
   Navbar,
@@ -13,8 +13,8 @@ import {
   Badge,
   ListGroup,
   ListGroupItem,
-  Button,
-} from 'reactstrap';
+  Button
+} from "reactstrap";
 
 import {
   MdNotificationsActive,
@@ -24,31 +24,29 @@ import {
   MdSettingsApplications,
   MdHelp,
   MdClearAll,
-  MdExitToApp,
-} from 'react-icons/lib/md';
+  MdExitToApp
+} from "react-icons/lib/md";
 
-import Avatar from 'components/Avatar';
-import { UserCard } from 'components/Card';
+import Avatar from "components/Avatar";
+import { UserCard } from "components/Card";
 
-
-
-const bem = bn.create('header');
+const bem = bn.create("header");
 
 class Header extends React.Component {
   state = {
     isOpenNotificationPopover: false,
-    isOpenUserCardPopover: false,
+    isOpenUserCardPopover: false
   };
 
   toggleNotificationPopover = () => {
     this.setState({
-      isOpenNotificationPopover: !this.state.isOpenNotificationPopover,
+      isOpenNotificationPopover: !this.state.isOpenNotificationPopover
     });
   };
 
   toggleUserCardPopover = () => {
     this.setState({
-      isOpenUserCardPopover: !this.state.isOpenUserCardPopover,
+      isOpenUserCardPopover: !this.state.isOpenUserCardPopover
     });
   };
 
@@ -56,13 +54,13 @@ class Header extends React.Component {
     event.preventDefault();
     event.stopPropagation();
 
-    document.querySelector('.cr-sidebar').classList.toggle('cr-sidebar--open');
+    document.querySelector(".cr-sidebar").classList.toggle("cr-sidebar--open");
   };
 
   render() {
     return (
-      <Navbar light expand className={bem.b('bg-cerulean')}>
-        <Nav navbar className={bem.e('nav-right')}>
+      <Navbar light expand className={bem.b("bg-cerulean")}>
+        <Nav navbar className={bem.e("nav-right")}>
           <NavItem>
             <NavLink>
               <Avatar
@@ -78,37 +76,7 @@ class Header extends React.Component {
               target="Popover2"
               className="p-0 border-0"
               style={{ minWidth: 250 }}
-            >
-              <PopoverBody className="p-0 border-light">
-                <UserCard
-                  title="Jane"
-                  subtitle="jane@jane.com"
-                  text="Last updated 3 mins ago"
-                  className="border-light"
-                >
-                  <ListGroup flush>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdPersonPin /> Profile
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdInsertChart /> Stats
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdMessage /> Messages
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdSettingsApplications /> Settings
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdHelp /> Help
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdExitToApp /> Signout
-                    </ListGroupItem>
-                  </ListGroup>
-                </UserCard>
-              </PopoverBody>
-            </Popover>
+            />
           </NavItem>
         </Nav>
       </Navbar>

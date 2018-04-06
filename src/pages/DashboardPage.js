@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { getColor } from 'utils/colors';
+import { getColor } from "utils/colors";
 
 import {
   Card,
@@ -12,35 +12,32 @@ import {
   ListGroup,
   ListGroupItem,
   Badge,
-  Button,
-} from 'reactstrap';
+  Button
+} from "reactstrap";
 
 import {
   MdInsertChart,
   MdBubbleChart,
   MdPieChart,
-  MdShowChart,
-} from 'react-icons/lib/md';
+  MdShowChart
+} from "react-icons/lib/md";
 
-
-import { Line, Bar } from 'react-chartjs-2';
+import { Line, Bar } from "react-chartjs-2";
 
 import {
   supportTicketsData,
   productsData,
   userProgressTableData,
   todosData,
-  chartjs,
-} from 'demos/dashboardPage';
-import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs';
+  chartjs
+} from "demos/dashboardPage";
+import { getStackLineChart, stackLineChartOptions } from "demos/chartjs";
 
-import Page from 'components/Page';
+import Page from "components/Page";
 
+import { AnnouncementCard, TodosCard } from "components/Card";
 
-import { AnnouncementCard, TodosCard } from 'components/Card';
-
-import { NumberWidget } from 'components/Widget';
-
+import { NumberWidget } from "components/Widget";
 
 const today = new Date();
 const lastWeek = new Date(
@@ -56,38 +53,34 @@ class DashboardPage extends React.Component {
   }
 
   render() {
-    const primaryColor = getColor('primary');
-    const secondaryColor = getColor('secondary');
+    const primaryColor = getColor("primary");
+    const secondaryColor = getColor("secondary");
 
     return (
-      <Page
-        className="DashboardPage"
-        title="Dashboard"
-        breadcrumbs={[{ name: 'Dashboard', active: true }]}
-      >
+      <Page className="DashboardPage" title="All Accounts">
         <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Total Profit"
+              title="Accounts"
               subtitle="This month"
               number="9.8k"
-              color="secondary"
+              color="success"
               progress={{
-                value: 75,
-                label: 'Last month',
+                value: 97,
+                label: "Last month"
               }}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Monthly Visitors"
+              title="Today's Performance"
               subtitle="This month"
               number="5,400"
-              color="secondary"
+              color="danger"
               progress={{
                 value: 45,
-                label: 'Last month',
+                label: "Last month"
               }}
             />
           </Col>
@@ -97,10 +90,10 @@ class DashboardPage extends React.Component {
               title="New Users"
               subtitle="This month"
               number="3,400"
-              color="secondary"
+              color="primary"
               progress={{
                 value: 90,
-                label: 'Last month',
+                label: "Last month"
               }}
             />
           </Col>
@@ -113,7 +106,7 @@ class DashboardPage extends React.Component {
               color="secondary"
               progress={{
                 value: 60,
-                label: 'Last month',
+                label: "Last month"
               }}
             />
           </Col>
@@ -123,7 +116,7 @@ class DashboardPage extends React.Component {
           <Col lg="8" md="12" sm="12" xs="12">
             <Card>
               <CardHeader>
-                Total Revenue{' '}
+                Total Revenue{" "}
                 <small className="text-muted text-capitalize">This year</small>
               </CardHeader>
               <CardBody>
